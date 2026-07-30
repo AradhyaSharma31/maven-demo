@@ -1,0 +1,30 @@
+version: "1.0"
+
+services:
+
+  postgresql:
+    image: postgres:17
+    container_name: postgresql
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: DatA_BasE26
+      POSTGRES_DB: Rakumo
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgresql-data:/var/lib/postgresql
+
+  app:
+    image: docker-demo-new
+    ports:
+      - "9090:9090"
+    environment:
+        SERVER_PORT: 9090
+        DB_HOST: postgresql
+    volumes:
+      - name-vol:/app
+
+volumes:
+  name-vol:
+  postgresql-data:
