@@ -10,6 +10,11 @@ public class HealthController {
 
     @GetMapping("/health")
     public String healthCheck() {
-        return "Ok";
+        return "Status: Ok!";
+    }
+
+    @GetMapping("/sum")
+    public int sum() {
+        return 2 + 2;
     }
 }

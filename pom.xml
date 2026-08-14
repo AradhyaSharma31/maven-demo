@@ -13,7 +13,7 @@
         <repository>
             <id>github</id>
             <name>GitHub AradhyaSharma31 Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/AradhyaSharma31/demo-maven</url>
+            <url>https://maven.pkg.github.com/AradhyaSharma31/maven-demo</url>
         </repository>
     </distributionManagement>
 
